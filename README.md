@@ -21,6 +21,8 @@ The goal is for the user to complete this sequence:
 - rotate `mountains` under cloud, which will make the cloud rain. It will alse change the `mountain.watered?` variable to true, and snow will appear.
 - rotate the `farm` under the raining cloud. This will change the `farm.watered` state to `true`. Thi will dissapate the cloud, which will dissappear. Then the `farm` will be under the sun, and plants will grow.
 
+### objetcts
+
 - mountains
   - state variables
     - `watered?`: bool
@@ -29,12 +31,31 @@ The goal is for the user to complete this sequence:
   - state variables
     - `sun_level`: int: 0 - 4
 - cloud
+  - `cloud` will exist but not be active by default
   - state variables
+    - `active`: bool
     - `raining?`: bool
 - farm
   - state variables
     - `watered?`: bool
     - `sun_level`: 0 - 4
+    
+### colliders
+
+- `dark_side`
+  - on opposite side of sun
+  - sets object `sun_level` states to 0
+- `mid_side`
+  - one on left, one on right
+  - sets object `sun_level` states to 1
+- `sun_side`
+  - below sun
+  - sets object `sune_level` states to 2
+- `cloud` collider
+  - on cloud object, under the sun
+  - is set to `active == true` when colliding with `lake` and `lake` `sun_level` == 3 and `lake.watered == true`
+  - is set to `raining == true` when colliding with mountain
+  - is set to `raining == false && active == false` when over `lake` and `lake.watered == false`
 
 ## Asset List
 
