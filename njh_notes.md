@@ -1,0 +1,8 @@
+- [ ] get Unity project running on nharsch machine
+- [ ] add state variables to components
+- [ ] install ECS?
+- [ ] implement reactive UI state on objects
+  - update sprites tut: https://gamedevbeginner.com/how-to-change-a-sprite-from-a-script-in-unity-with-examples/#:~:text=To%20change%20a%20Sprite%20from%20a%20script%20in%20Unity%2C%20create,match%20the%20new%2C%20replacement%20Sprite.
+  - [ ] create object state update job
+- [ ] implement hit boxes
+  - [ ] implement collision handlers job
