@@ -23,18 +23,18 @@ The goal is for the user to complete this sequence:
 
 - mountains
   - state variables
-    - watered?: bool
-    - sun_level: int: 0 - 4
+    - `watered?`: bool
+    - `sun_level`: int: 0 - 4
 - lake
   - state variables
-    - sun_level: int: 0 - 4
+    - `sun_level`: int: 0 - 4
 - cloud
   - state variables
-    - raining?: bool
+    - `raining?`: bool
 - farm
   - state variables
-    - watered?: bool
-    - sun_level: 0 - 4
+    - `watered?`: bool
+    - `sun_level`: 0 - 4
 
 ## Asset List
 
