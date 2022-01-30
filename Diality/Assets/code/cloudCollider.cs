@@ -71,18 +71,12 @@ public class cloudCollider : MonoBehaviour
     {
         // Debug.Log("cloud enter: " + col.gameObject.name);
         this.objUnderCloud = col.gameObject;
-        // precip(col.gameObject);
-        // evap(col.gameObject);
-        // condensate(col.gameObject);
     }
 
     void OnTriggerStay2D(Collider2D col) 
     {
         // Debug.Log("cloud stay: " + col.gameObject.name);
         this.objUnderCloud = col.gameObject;
-        // precip(col.gameObject);
-        // evap(col.gameObject);
-        // condensate(col.gameObject);
     }
 
     void OnTriggerExit2D(Collider2D col)
@@ -99,9 +93,12 @@ public class cloudCollider : MonoBehaviour
     }
 
     void Update() {
-        precip(this.objUnderCloud);
-        evap(this.objUnderCloud);
-        condensate(this.objUnderCloud);
+        if (this.objUnderCloud)
+        {
+            precip(this.objUnderCloud);
+            evap(this.objUnderCloud);
+            condensate(this.objUnderCloud);
+        }
     }
 
 }

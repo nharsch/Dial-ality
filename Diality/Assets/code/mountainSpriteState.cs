@@ -36,7 +36,9 @@ public class mountainSpriteState : MonoBehaviour
     {
         int sunLevel = this.gameObject.GetComponent<variables>().sunLevel;
         bool watered = this.gameObject.GetComponent<variables>().watered;
-        
+        bool raining = GameObject.Find("Clouds") ?? GameObject.Find("clouds").GetComponent<cloudVariables>().raining;
+
+
         if (watered) 
         {
             if (sunLevel == 0) {
@@ -49,8 +51,7 @@ public class mountainSpriteState : MonoBehaviour
                 this.ChangeImage(MELTING);
             }
             if (sunLevel == 3) {
-                this.ChangeImage(NOSNOW);
-                this.gameObject.GetComponent<variables>().watered = false;
+                this.ChangeImage(MELTING);
             }
         }
         else  // no water

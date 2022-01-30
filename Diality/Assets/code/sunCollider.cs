@@ -43,8 +43,6 @@ public class sunCollider : MonoBehaviour
     void OnTriggerExit2D(Collider2D col)
     {
         this.objInSun = null;
-        // Debug.Log("sun stay");
-        // changeSunLevel(col.gameObject);
     }
 
     void Update()
@@ -55,6 +53,7 @@ public class sunCollider : MonoBehaviour
         } else {
             if (this.objInSun != null) {
                 this.objInSun.GetComponent<variables>().sunLevel = 3;
+                this.objInSun.GetComponent<variables>().watered = false;
             }
         }
     }
