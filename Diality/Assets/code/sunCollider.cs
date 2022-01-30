@@ -25,7 +25,7 @@ public class sunCollider : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col) 
     {
-        Debug.Log("sun stay");
+        // Debug.Log("sun stay");
         changeSunLevel(col.gameObject, SUN_LEVEL);
     }
 
