@@ -209,13 +209,15 @@ GameObject:
   m_Component:
   - component: {fileID: 26569816}
   - component: {fileID: 26569817}
+  - component: {fileID: 26569819}
+  - component: {fileID: 26569818}
   m_Layer: 5
   m_Name: Clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &26569816
 RectTransform:
   m_ObjectHideFlags: 0
@@ -272,6 +274,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 187.48276, y: 182.37207}
   m_EdgeRadius: 0
+--- !u!114 &26569818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26569815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24413dd7ae1914c1badf6c032ee6ba66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &26569819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26569815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0b3b74a2dda94c50a32fde15ac8345a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raining: 0
+  intensity: 0
 --- !u!1 &32944261
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &32944262
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3997,7 +4025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1707833253
 RectTransform:
   m_ObjectHideFlags: 0
