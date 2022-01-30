@@ -12,7 +12,12 @@ public class LongClickMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 	public float maxBound = 60f;
 	private float change = 0f;
 	private float bound = 0f;
+	private Transform imageTran;
 
+	private void Start()
+	{
+		imageTran = this.gameObject.GetComponent<Image>().transform;
+	}
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		pointerDown = true;
@@ -33,7 +38,12 @@ public class LongClickMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
 			if ((bound > maxBound) || (bound < -maxBound))
 			{
-				direction = direction * -1;
+				direction *= -1;
+
+				Vector3 theScale = imageTran.localScale;
+				theScale.x *= -1;
+				transform.localScale = theScale;
+				
 				//movableObj.transform.Translate(Vector3.up * change);
 			}
 		}
