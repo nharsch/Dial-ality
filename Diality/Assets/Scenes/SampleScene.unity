@@ -3881,6 +3881,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1666349571}
   - component: {fileID: 1666349572}
+  - component: {fileID: 1666349573}
+  - component: {fileID: 1666349574}
+  - component: {fileID: 1666349575}
   m_Layer: 5
   m_Name: Lake
   m_TagString: Untagged
@@ -3927,9 +3930,56 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7934405, y: 213.51117}
-  m_Size: {x: 178.52812, y: 52.680214}
+  m_Offset: {x: -1.7794584, y: 213.63544}
+  m_Size: {x: 67.95462, y: 33.30612}
   m_Direction: 1
+--- !u!114 &1666349573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666349570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8bb000d0ca94e6195b06ebc4724691, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watered: 1
+  sunLevel: 0
+--- !u!114 &1666349574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666349570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8108d1e03209f4625b9f7aa6be6dcf30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1666349575
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666349570}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1670852329
 GameObject:
   m_ObjectHideFlags: 0

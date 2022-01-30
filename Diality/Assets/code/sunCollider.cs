@@ -19,21 +19,14 @@ public class sunCollider : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col) 
     {
-        Debug.Log("sun collission");
-        {
-            changeSunLevel(col.gameObject, SUN_LEVEL);
-        }
+        // Debug.Log("sun collission");
+        changeSunLevel(col.gameObject, SUN_LEVEL);
     }
 
     void OnTriggerStay2D(Collider2D col) 
     {
-        {
-            changeSunLevel(col.gameObject, SUN_LEVEL);
-        }
+        Debug.Log("sun stay");
+        changeSunLevel(col.gameObject, SUN_LEVEL);
     }
 
-    void OnTriggerExit2D(Collider2D col)
-    {
-    }
-        
 }

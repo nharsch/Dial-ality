@@ -6,10 +6,11 @@ public class cloudVariables : MonoBehaviour
 {
     public bool raining;
     public int intensity;
-}
 
-void Start()
-{
-    this.raining = false;
-    this.intensity = 0;
+
+    void Start()
+    {
+        this.raining = false;
+        this.intensity = 0;
+    }
 }
