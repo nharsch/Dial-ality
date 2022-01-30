@@ -31,5 +31,6 @@
       - [X] if colliding with mountain and active, update raining var, update mountain water var
       - [X] if colliding with object and raining, update object water var
       - if colliding with lake and lake water is false, update rain var and active var
-- [ ] create timer
+- [X] create timer
   - function timer video: https://www.youtube.com/watch?v=1hsppNzx7_0
+- [ ] fix sun left side collider issue

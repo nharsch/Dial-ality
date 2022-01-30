@@ -53,7 +53,13 @@ public class cropSpriteState : MonoBehaviour
                 this.ChangeImage(DEF);
             }
             if (sunLevel == 3) {
-                this.gameObject.GetComponent<cropVariables>().grown = true;
+                if (!this.gameObject.GetComponent<cropVariables>().grown)
+                {
+                    this.gameObject.GetComponent<cropVariables>().grown = true;
+                } else {
+                    this.ChangeImage(DRY);
+                }
+
             }
         }
         else  // no water

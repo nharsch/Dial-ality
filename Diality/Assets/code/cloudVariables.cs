@@ -11,6 +11,6 @@ public class cloudVariables : MonoBehaviour
     void Start()
     {
         this.raining = false;
-        this.intensity = 0;
+        this.intensity = 0; // 0 - 2
     }
 }

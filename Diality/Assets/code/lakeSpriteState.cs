@@ -40,6 +40,7 @@ public class lakeSpriteState : MonoBehaviour
         {
             if (sunLevel == 0) {
                 this.ChangeImage(FROZEN);
+                // TODO: add audio
             } 
             if (sunLevel == 1) {
                 this.ChangeImage(DEF);

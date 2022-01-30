@@ -44,8 +44,7 @@ public class cloudSpriteState : MonoBehaviour
         bool raining = this.gameObject.GetComponent<cloudVariables>().raining;
         int intensity = this.gameObject.GetComponent<cloudVariables>().intensity;
 
-
-        // change 
+        // change
         if (intensity == 0) {
             // Debug.Log("no cloud");
             this.ChangeImage(NONE);
