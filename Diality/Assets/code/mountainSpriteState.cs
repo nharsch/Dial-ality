@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class spriteState : MonoBehaviour
+public class mountainSpriteState : MonoBehaviour
 {
     private string NOSNOW = "MountainImage";
     private string SNOW = "SnowMountainImage";
@@ -26,6 +26,7 @@ public class spriteState : MonoBehaviour
         }
     }
 
+
     void Start()
     {
     }
@@ -38,19 +39,18 @@ public class spriteState : MonoBehaviour
         
         if (watered) 
         {
-            
+            if (sunLevel == 0) {
+                this.ChangeImage(SNOW);
+            } 
+            if (sunLevel == 1) {
+                // this.ChangeImage(MELTING);
+            }
             if (sunLevel == 2) {
                 this.ChangeImage(MELTING);
-                Debug.Log("Melting");
             }
-            else if (sunLevel == 3) {
-                this.ChangeImage(NOSNOW); // melt
-                // change water level, melt
-                Debug.Log("NoSnow");
-            }
-            else {
-                this.ChangeImage(SNOW);
-                Debug.Log("snow 0");
+            if (sunLevel == 3) {
+                this.ChangeImage(NOSNOW);
+                this.gameObject.GetComponent<variables>().watered = false;
             }
         }
         else  // no water

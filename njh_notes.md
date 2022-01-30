@@ -6,16 +6,23 @@
     - open new project
 - [-] install ECS?
   - job system
-- [ ] create game components
-- [ ] add state variables to components
+- [X] how to create cloud object
+  - create empty object with collider
+    - https://www.youtube.com/watch?v=YQ7Umjp6R10
+    - trigger collider will send trigger message
+- [X] create game components
+- [X] add state variables to components
 - [ ] implement reactive UI state on objects
   - [ ] add update handlers to objects
-  - update sprites tut: https://gamedevbeginner.com/how-to-change-a-sprite-from-a-script-in-unity-with-examples/#:~:text=To%20change%20a%20Sprite%20from%20a%20script%20in%20Unity%2C%20create,match%20the%20new%2C%20replacement%20Sprite.
-  - [ ] create object state update job
-- [ ] implement hit boxes
-  - [ ] implement collision handlers job
-    - [ ] change component state vars
-    - [ ] put collision handler on sun collision box zones
+    - [ ] mountain
+      - [ ] only freeze in cold
+    - [ ] cloud
+    - [ ] lake
+    - [ ] farm
+- [-] implement hit boxes
+  - [-] implement collision handlers job
+    - [X] change component state vars
+    - [X] put collision handler on sun collision box zones
       - check if box has hit a game object
         - change it's sun level
     - [ ] cloud collision handler
@@ -23,9 +30,5 @@
       - [ ] if colliding with mountain and active, update raining var, update mountain water var
       - [ ] if colliding with object and raining, update object water var
       - if colliding with lake and lake water is false, update rain var and active var
-- [ ] how to create cloud object
-  - create empty object with collider
-    - https://www.youtube.com/watch?v=YQ7Umjp6R10
-    - trigger collider will send trigger message
 - [ ] create timer
   - function timer video: https://www.youtube.com/watch?v=1hsppNzx7_0
