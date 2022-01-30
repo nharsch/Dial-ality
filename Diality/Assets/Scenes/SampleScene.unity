@@ -2464,6 +2464,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1638598331}
     m_Modifications:
     - target: {fileID: 6327190587723261314, guid: a1c780c7665c61941a94eddfdf6d53a9, type: 3}
+      propertyPath: m_Name
+      value: SnowMountainImage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327190587723261314, guid: a1c780c7665c61941a94eddfdf6d53a9, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}

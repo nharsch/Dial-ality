@@ -29,7 +29,7 @@ public class LongClickMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 		{
 			change = 1 * moveSpeed * direction * Time.deltaTime;
 			bound += change;
-			movableObj.transform.Translate(Vector3.up * change);
+			movableObj.transform.Translate(Vector3.right * change);
 
 			if ((bound > maxBound) || (bound < -maxBound))
 			{
