@@ -20,6 +20,15 @@ public class cloudCollider : MonoBehaviour
             }
         }
         // TODO: snow?
+        if (obj.name == LAKE)
+        {
+            // rain fills up lake, stops clouds
+            if (this.GetComponent<cloudVariables>().raining)
+            {
+                this.GetComponent<cloudVariables>().intensity = 0;
+                this.GetComponent<cloudVariables>().raining = false;
+            }
+        }
     }
 
     void evap(GameObject obj) 
