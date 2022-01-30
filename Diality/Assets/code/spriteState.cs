@@ -10,6 +10,7 @@ public class spriteState : MonoBehaviour
 
     private string NOSNOW = "MountainImage";
     private string SNOW = "SnowMountainImage";
+    private string MELTING = "SnowMountainImage"; // TODO add melting mountain image
     private string FIRE = "MountainImage"; // TODO add fire mountain image
 
     void ChangeImage(string imgName) 
@@ -39,8 +40,12 @@ public class spriteState : MonoBehaviour
 
         if (watered) 
         {
+            if (sunLevel == 2) {
+                this.ChangeImage(MELTING);
+            }
             if (sunLevel == 3) {
-                this.ChangeImage(NOSNOW);
+                this.ChangeImage(NOSNOW); // melt
+                // change water level, melt
             }
             else {
                 this.ChangeImage(SNOW);

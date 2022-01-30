@@ -181,7 +181,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -24.840164, y: 31.943832}
+  m_Offset: {x: -10.523605, y: 21.094643}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -192,7 +192,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 200.06705, y: 215.10147}
+  m_Size: {x: 228.70016, y: 105.14995}
   m_EdgeRadius: 0
 --- !u!1 &324140257
 GameObject:
@@ -1177,7 +1177,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 5.4122543, y: 290.232}
+  m_Offset: {x: 0.85502625, y: 301.05542}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1188,7 +1188,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 186.3427, y: 106.51196}
+  m_Size: {x: 122.541504, y: 89.42236}
   m_EdgeRadius: 0
 --- !u!50 &778399620
 Rigidbody2D:
@@ -1381,7 +1381,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 83.60835, y: 25.925438}
+  m_Offset: {x: 72.87091, y: 24.160172}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1392,7 +1392,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 225.51303, y: 251.21193}
+  m_Size: {x: 246.98792, y: 95.24414}
   m_EdgeRadius: 0
 --- !u!1 &1018357738
 GameObject:
@@ -2746,7 +2746,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8.757263, y: -503.44934}
+  m_Offset: {x: -20.949554, y: -520.62915}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2757,7 +2757,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 410.89954, y: 279.69678}
+  m_Size: {x: 307.0905, y: 314.05664}
   m_EdgeRadius: 0
 --- !u!1001 &6327190589610746069
 PrefabInstance:

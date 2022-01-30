@@ -2,22 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class sunCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
+    int SUN_LEVEL = 2;
+    void changeSunLevel(GameObject obj, int level)
+    {
+        if (obj.GetComponent<variables>() != null)
+        {
+            if (obj.GetComponent<variables>().sunLevel != level) {
+                obj.GetComponent<variables>().sunLevel = level;
+            }
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D col) 
     {
-        // look for sun component
-        Debug.Log("sun collission");
-        if (col.gameObject.GetComponent<variables>() != null)
+        // Debug.Log("sun collission");
         {
-            col.gameObject.GetComponent<variables>().sunLevel = 2;
+            changeSunLevel(col.gameObject, SUN_LEVEL);
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D col) 
+    {
+        // Debug.Log("sun stay");
+        {
+            changeSunLevel(col.gameObject, SUN_LEVEL);
         }
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
-        Debug.Log("exit sun collission");
+        // Debug.Log("exit sun collission");
     }
         
 }
