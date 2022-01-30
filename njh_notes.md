@@ -12,13 +12,14 @@
     - trigger collider will send trigger message
 - [X] create game components
 - [X] add state variables to components
-- [ ] implement reactive UI state on objects
-  - [ ] add update handlers to objects
-    - [ ] mountain
-      - [ ] only freeze in cold
-    - [ ] cloud
-    - [ ] lake
-    - [ ] farm
+- [X] implement reactive UI state on objects
+  - [X] add update handlers to objects
+    - [X] mountain
+      - [X] only freeze in cold
+    - [X] cloud
+      - [X] should not rotate with world
+    - [X] lake
+    - [X] farm
 - [-] implement hit boxes
   - [-] implement collision handlers job
     - [X] change component state vars
@@ -26,7 +27,8 @@
       - check if box has hit a game object
         - change it's sun level
     - [ ] cloud collision handler
-      - [ ] if colliding with lake and lake sun level is 3, update active, update lake water var
+      - [ ] if colliding with lake and sun level is 2, update intensity to 1
+      - [ ] if colliding with lake and lake sun level is 3, update intensity to 2, change lake water var false
       - [ ] if colliding with mountain and active, update raining var, update mountain water var
       - [ ] if colliding with object and raining, update object water var
       - if colliding with lake and lake water is false, update rain var and active var
