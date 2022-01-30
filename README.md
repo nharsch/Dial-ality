@@ -60,21 +60,21 @@ The goal is for the user to complete this sequence:
 ## Asset List
 
 - mountain
-  - no snow
-  - no snow + heat lines
-  - on fire
-  - snow
-  - snow + heat lines
+  - [ ] no snow
+  - [ ] no snow + heat lines
+  - [ ] on fire
+  - [ ] snow
+  - [ ] snow + heat lines
 - lake
-  - frozen 
-  - frozen + heat lines
-  - unfrozen water
-  - unfrozen water + heat lines
+  - [ ] frozen 
+  - [ ] frozen + heat lines
+  - [ ] unfrozen water
+  - [ ] unfrozen water + heat lines
 - cloud
-  - not raining
-  - raining
+  - [ ] not raining
+  - [ ] raining
 - farm
-  - default (green field?)
-  - default + heat lines
-  - sunburnt
-  - growing crops
+  - [ ] default (green field?)
+  - [ ] default + heat lines
+  - [ ] sunburnt
+  - [ ] growing crops
