@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class spriteState : MonoBehaviour
 
-private string NOSNOW = "MountainImage"
-private string SNOW = "SnowMountainImage"
-private string FIRE = "MountainImage"; // TODO add fire mountain image
-
 {
+
+    private string NOSNOW = "MountainImage";
+    private string SNOW = "SnowMountainImage";
+    private string FIRE = "MountainImage"; // TODO add fire mountain image
 
     void ChangeImage(string imgName) 
     {
@@ -50,7 +50,7 @@ private string FIRE = "MountainImage"; // TODO add fire mountain image
         {
             if (sunLevel == 3) {
                 // TODO
-                this.ChangeImage()
+                this.ChangeImage(FIRE);
             }
             else {
                 this.ChangeImage(NOSNOW);
