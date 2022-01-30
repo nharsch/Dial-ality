@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 26569817}
   - component: {fileID: 26569819}
   - component: {fileID: 26569818}
+  - component: {fileID: 26569820}
   m_Layer: 5
   m_Name: Clouds
   m_TagString: Untagged
@@ -261,7 +262,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3910675, y: 308.55762}
+  m_Offset: {x: 2.6867867, y: 308.55762}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -272,7 +273,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 187.48276, y: 182.37207}
+  m_Size: {x: 86.417046, y: 182.37207}
   m_EdgeRadius: 0
 --- !u!114 &26569818
 MonoBehaviour:
@@ -300,6 +301,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raining: 0
   intensity: 0
+--- !u!114 &26569820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26569815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7963a86c241414dd7bcfffa4f120435a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &32944261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4724,8 +4737,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.6825562, y: -441.3418}
-  m_Size: {x: 443.08142, y: 857.7073}
+  m_Offset: {x: -11.46286, y: -419.70767}
+  m_Size: {x: 145.19586, y: 814.439}
   m_Direction: 0
 --- !u!1001 &6327190589610746069
 PrefabInstance:
@@ -4828,7 +4841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6327190588832878506, guid: a1c780c7665c61941a94eddfdf6d53a9, type: 3}
       propertyPath: m_Name
-      value: Mountians1
+      value: Mountains1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 778399617, guid: a1c780c7665c61941a94eddfdf6d53a9, type: 3}

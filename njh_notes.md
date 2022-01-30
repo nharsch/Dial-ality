@@ -1,11 +1,10 @@
-- [x] get Unity project running on nharsch machine
+- [X] get Unity project running on nharsch machine
   - 2021.2.4f1
   - opened unity
     - open unity hub
     - create new project
     - open new project
-- [-] install ECS?
-  - job system
+~~- [X] install ECS?~~
 - [X] how to create cloud object
   - create empty object with collider
     - https://www.youtube.com/watch?v=YQ7Umjp6R10
@@ -20,17 +19,17 @@
       - [X] should not rotate with world
     - [X] lake
     - [X] farm
-- [-] implement hit boxes
-  - [-] implement collision handlers job
+- [X] implement hit boxes
+  - [X] implement collision handlers job
     - [X] change component state vars
     - [X] put collision handler on sun collision box zones
       - check if box has hit a game object
         - change it's sun level
-    - [ ] cloud collision handler
-      - [ ] if colliding with lake and sun level is 2, update intensity to 1
-      - [ ] if colliding with lake and lake sun level is 3, update intensity to 2, change lake water var false
-      - [ ] if colliding with mountain and active, update raining var, update mountain water var
-      - [ ] if colliding with object and raining, update object water var
+    - [X] cloud collision handler
+      - [X] if colliding with lake and sun level is 2, update intensity to 1
+      - [X] if colliding with lake and lake sun level is 3, update intensity to 2, change lake water var false
+      - [X] if colliding with mountain and active, update raining var, update mountain water var
+      - [X] if colliding with object and raining, update object water var
       - if colliding with lake and lake water is false, update rain var and active var
 - [ ] create timer
   - function timer video: https://www.youtube.com/watch?v=1hsppNzx7_0
