@@ -8,8 +8,8 @@ public class spriteState : MonoBehaviour
 {
     private string NOSNOW = "MountainImage";
     private string SNOW = "SnowMountainImage";
-    private string MELTING = "SnowMountainImage"; // TODO add melting mountain image
-    private string FIRE = "MountainImage"; // TODO add fire mountain image
+    private string MELTING = "RiverMountain"; // TODO add melting mountain image
+    private string FIRE = "BurntMountain"; // TODO add fire mountain image
 
     void ChangeImage(string imgName) 
     {
@@ -35,18 +35,22 @@ public class spriteState : MonoBehaviour
     {
         int sunLevel = this.gameObject.GetComponent<variables>().sunLevel;
         bool watered = this.gameObject.GetComponent<variables>().watered;
-
+        
         if (watered) 
         {
+            
             if (sunLevel == 2) {
                 this.ChangeImage(MELTING);
+                Debug.Log("Melting");
             }
-            if (sunLevel == 3) {
+            else if (sunLevel == 3) {
                 this.ChangeImage(NOSNOW); // melt
                 // change water level, melt
+                Debug.Log("NoSnow");
             }
             else {
                 this.ChangeImage(SNOW);
+                Debug.Log("snow 0");
             }
         }
         else  // no water
