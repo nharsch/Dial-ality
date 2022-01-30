@@ -5,15 +5,7 @@ using UnityEngine.UI;
 
 
 public class spriteState : MonoBehaviour
-//<<<<<<< Updated upstream
-
-//=======
-//>>>>>>> Stashed changes
 {
-    private string NOSNOW = "MountainImage";
-    private string SNOW = "SnowMountainImage";
-   // private string FIRE = "MountainImage"; // TODO add fire mountain image
-
     private string NOSNOW = "MountainImage";
     private string SNOW = "SnowMountainImage";
     private string MELTING = "SnowMountainImage"; // TODO add melting mountain image
@@ -60,13 +52,7 @@ public class spriteState : MonoBehaviour
         else  // no water
         {
             if (sunLevel == 3) {
-//<<<<<<< Updated upstream
-                // TODO
                 this.ChangeImage(FIRE);
-//=======
-            // TODO
-                this.ChangeImage();
-//>>>>>>> Stashed changes
             }
             else {
                 this.ChangeImage(NOSNOW);
